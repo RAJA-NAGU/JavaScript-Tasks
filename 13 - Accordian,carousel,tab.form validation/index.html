@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ---------------------------Accordian-------------------------------- -->
+  <div class="accoridan-container container-c">
+    <div class="accordian-item">
+      <div class="accordian-head">
+        <h2>How accordian works?</h2>
+        <button class="accordian-btn">
+          <i class="fa-solid fa-chevron-down acc-btn"></i>
+          <i class="fa-solid fa-chevron-up acc-btn"></i>
+        </button>
+      </div>
+      <div class="accordian-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, a alias assumenda quibusdam vitae quis totam
+        dolor! Saepe rem, nisi, placeat cupiditate culpa quibusdam nulla commodi ex debitis libero praesentium!
+      </div>
+    </div>
+
+    <div class="accordian-item ">
+      <div class="accordian-head">
+        <h2>How accordian works?</h2>
+        <button class="accordian-btn">
+          <i class="fa-solid fa-chevron-down acc-btn"></i>
+          <i class="fa-solid fa-chevron-up acc-btn"></i>
+        </button>
+      </div>
+      <div class="accordian-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, a alias assumenda quibusdam vitae quis totam
+        dolor! Saepe rem, nisi, placeat cupiditate culpa quibusdam nulla commodi ex debitis libero praesentium!
+      </div>
+    </div>
+
+    <div class="accordian-item ">
+      <div class="accordian-head">
+        <h2>How accordian works?</h2>
+        <button class="accordian-btn">
+          <i class="fa-solid fa-chevron-down acc-btn"></i>
+          <i class="fa-solid fa-chevron-up acc-btn"></i>
+        </button>
+      </div>
+      <div class="accordian-description">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, a alias assumenda quibusdam vitae quis totam
+        dolor! Saepe rem, nisi, placeat cupiditate culpa quibusdam nulla commodi ex debitis libero praesentium!
+      </div>
+    </div>
+
+  </div>
+  <!-- ---------------------------tabs switching-------------------------------- -->
+  <div class="tab-container container-c">
+
+    <div class="tabs-btns">
+      <button class="tab-btn" onclick="tab(0)">Tab1</button>
+      <button class="tab-btn" onclick="tab(1)">Tab2</button>
+      <button class="tab-btn" onclick="tab(2)">Tab3</button>
+    </div>
+
+    <div class="tabs" style="display: block;">
+      <h1>Tab 1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, non quidem. Quae ad deserunt eaque porro non et
+        natus rerum tempore magnam dicta totam iste minus, officiis ipsum illo dignissimos?</p>
+    </div>
+    <div class="tabs">
+      <h1>Tab 2</h1>
+      <p>adipisicing elit. Natus, non quidem. Quae ad deserunt eaque porro non et
+        natus rerum tempore magnam dicta totam iste minus, officiis ipsum illo dignissimos?</p>
+    </div>
+    <div class="tabs">
+      <h1>Tab 3</h1>
+      <p>dolor sit amet consectetur adipisicing elit. Natus, non quidem. Quae ad deserunt eaque porro non et
+        natus rerum tempore magnam dicta totam iste minus illo dignissimos?</p>
+    </div>
+  </div>
+
+  <!-- ---------------------------Carousel-------------------------------- -->
+
+  <div class="carousel container-c">
+    <div class="slide">
+      <img src="img/img-1.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="img/img-2.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="img/img-3.jpg" alt="">
+    </div>
+    <a href="#" class="btn next">Next</a>
+    <a href="#" class="btn Previous">Pre</a>
+
+    <ul class="indicators">
+      <li><a href="" class="indicator-link active"></a></li>
+      <li><a href="" class="indicator-link"></a></li>
+      <li><a href="" class="indicator-link"></a></li>
+    </ul>
+  </div>
+  <!-- ---------------------------form Validation-------------------------------- -->
+
+  <form class="form-validate container-c">
+    <div class="form-element">
+      <label for="username">Username</label>
+      <input type="text" id="name" class="username" name="username">
+      <small id="name-error"></small>
+    </div>
+    <div class="form-element">
+      <label for="mail">Email</label>
+      <input type="text" id="mail" class="mail" name="mail">
+      <small id="mail-error"></small>
+    </div>
+    <div class="form-element">
+      <label for="password">Password</label>
+      <input type="text" id="password" class="password" name="password">
+      <small id="password-error"></small>
+    </div>
+    <div class="form-element">
+      <label for="cpassword">Confirm Password</label>
+      <input type="text" id="cpassword" class="confirmpswd" name="confirmpswd">
+      <small id="cpassword-error"></small>
+    </div>
+    <div class="form-element">
+      <label for="college">College</label>
+      <input type="text" id="college" class="college" name="college">
+      <small id="college-error"></small>
+    </div>
+    <div class="form-element">
+      <label for="subject">Subject</label>
+      <select name="subject" id="subject">
+        <option value="">select course</option>
+        <option value="CS">CS</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+      </select>
+      <small id="subject-error"></small>
+    </div>
+
+    <div class="form-element agree-element">
+      <input type="checkbox" name="agree" id="agree" class="agree">
+      <label for="agree" class="agree-label">I agree the above information</label>
+      <small id="agree-error"></small>
+    </div>
+
+
+    <button type="submit" class="submit">submit</button>
+  </form>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+:root {
+  --color-bg: #003329;
+  --color-menu: #359581;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header h2 {
+  font-size: 32px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-menu);
+}
+
+.sign-up {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-menu);
+  border-radius: 20px;
+  color: #fff;
+  z-index: 2;
+}
+
+/* parallax */
+.parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.parallax h1 {
+  font-size: 52px;
+  color: #fff;
+  text-shadow: 6px 10px 5px rgba(0, 0, 0, 0.437);
+  position: absolute;
+}
+
+.content {
+  padding: 60px 80px;
+  background-color: #003329;
+  color: #fff;
+}
+
+.skate-board-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.women {
+  width: 30%;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO list</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>TO-DO List</h1>
+  <div class="container">
+    <input type="text" class="input" placeholder="Enter the task">
+    <button class="btn-add btn">ADD</button>
+    <small class="error"> </small>
+  </div>
+
+  <div class="task-list">
+
+  </div>
+
+  <section class="faq">
+    <ul class="faq-tab-header">
+      <li class="btn faq-tab active" onclick="faqTabchange(0)">TAB 1</li>
+      <li class="btn faq-tab" onclick="faqTabchange(1)">TAB 2</li>
+      <li class="btn faq-tab" onclick="faqTabchange(2)">TAB 3</li>
+    </ul>
+    <div class="tab-contents">
+      <ul class="faq-tab-content active">
+        <li class="faq-box">
+          <div class="box-head" onclick="faqContent(0)">
+            <h3>How Accordian works 1?</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="box-content">
+            <div class="box-content-inner">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta, sint quod necessitatibus, natus
+                delectus unde ut, nostrum assumenda modi suscipit porro commodi? Tempore quidem, quaerat ad delectus
+                ducimus recusandae.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="faq-box">
+          <div class="box-head" onclick="faqContent(1)">
+            <h3>How Accordian works 2?</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="box-content">
+            <div class="box-content-inner">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta, sint quod necessitatibus, natus
+                delectus unde ut, nostrum assumenda modi suscipit porro commodi? Tempore quidem, quaerat ad delectus
+                ducimus recusandae.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
+
+      <ul class="faq-tab-content">
+        <li class="faq-box">
+          <div class="box-head" onclick="faqContent(2)">
+            <h3>How Accordian works 3?</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="box-content">
+            <div class="box-content-inner">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta, sint quod necessitatibus, natus
+                delectus unde ut, nostrum assumenda modi suscipit porro commodi? Tempore quidem, quaerat ad delectus
+                ducimus recusandae.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="faq-box">
+          <div class="box-head" onclick="faqContent(3)">
+            <h3>How Accordian works 4?</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="box-content">
+            <div class="box-content-inner">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta, sint quod necessitatibus, natus
+                delectus unde ut, nostrum assumenda modi suscipit porro commodi? Tempore quidem, quaerat ad delectus
+                ducimus recusandae.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
+      <ul class="faq-tab-content">
+        <li class="faq-box">
+          <div class="box-head" onclick="faqContent(4)">
+            <h3>How Accordian works 5?</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="box-content">
+            <div class="box-content-inner">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta, sint quod necessitatibus, natus
+                delectus unde ut, nostrum assumenda modi suscipit porro commodi? Tempore quidem, quaerat ad delectus
+                ducimus recusandae.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="faq-box">
+          <div class="box-head" onclick="faqContent(5)">
+            <h3>How Accordian works 6?</h3>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="box-content">
+            <div class="box-content-inner">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dicta, sint quod necessitatibus, natus
+                delectus unde ut, nostrum assumenda modi suscipit porro commodi? Tempore quidem, quaerat ad delectus
+                ducimus recusandae.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.form-control .error {
+  visibility: hidden;
+}
+
+.form-control.error .error {
+  visibility: visible;
+}

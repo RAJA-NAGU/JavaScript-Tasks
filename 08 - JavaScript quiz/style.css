@@ -1,0 +1,227 @@
+:root {
+  --clr-bg: #e9ecef;
+  --clr-grape: #cc5de8;
+  --clr-indigo: #5c7cfa;
+  --clr-yellow: #ffe066;
+  --clr-dark: #087f5b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: var(--clr-bg);
+}
+
+/* progress-bar */
+.progress-bar {
+  height: 5px;
+  /* width: 10px; */
+  position: fixed;
+  background-color: var(--clr-dark);
+}
+
+/* move */
+.move {
+  width: 200px;
+  height: 4px;
+  background-color: var(--clr-dark);
+  margin-left: 20px;
+  position: relative;
+
+}
+
+.move::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--clr-indigo);
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(200px);
+  }
+
+  100% {
+    transform: translate(0);
+
+  }
+}
+
+/* flip-card */
+.flip-card-container {
+  width: 300px;
+  aspect-ratio: 1/1;
+  margin: 10px auto;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.front {
+  background-color: var(--clr-grape);
+  transform: rotateY(0deg);
+}
+
+.back {
+  background-color: var(--clr-indigo);
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-container:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+/* half-circle */
+
+.half-circle {
+  width: 400px;
+  height: 200px;
+  background-color: var(--clr-yellow);
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  margin: 10px auto;
+}
+
+/* card-hover */
+
+.card-hover {
+  width: 300px;
+  height: 300px;
+  background-color: var(--clr-indigo);
+  position: relative;
+  margin: 50px auto;
+}
+
+.card-hover::after,
+.card-hover::before {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-grape);
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-hover::after {
+  left: 0;
+  top: 0;
+  transform: rotate(0deg);
+}
+
+.card-hover::before {
+  left: 0;
+  top: 0;
+  transform: rotate(0deg);
+}
+
+.card-hover:hover::after {
+  transform: rotate(-10deg);
+
+}
+
+.card-hover:hover::before {
+  transform: rotate(-20deg);
+}
+
+/* faq */
+
+.faq-container {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  background-color: var(--clr-yellow);
+  border: 1px solid #444;
+  padding: 5px;
+}
+
+.faq-head {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.faq-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.show .faq-description {
+  max-height: 1000px
+}
+
+/* tab */
+.tab-btns {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  margin: 10px aut0;
+}
+
+.tab-btn {
+  width: 100px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* BOx-shadow */
+
+.box-shadow {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-color: #cc5de8;
+  animation: riple 1s linear infinite;
+  margin-top: 30px;
+}
+
+
+
+@keyframes riple {
+  0% {
+    box-shadow: 0 0 0 0px rgb(121, 80, 242),
+      0 0 0 10px rgb(121, 80, 242),
+      0 0 0 20px rgb(121, 80, 242);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px #e64980,
+      0 0 0 20px rgba(121, 80, 242, 0.944),
+      0 0 0 50px rgba(121, 80, 242, 0.884);
+  }
+}
